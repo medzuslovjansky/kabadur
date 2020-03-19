@@ -1,0 +1,62 @@
+<style>
+:root {
+  background:
+    linear-gradient(to bottom, #19364400 45vmin, #1f3c4a4f 60vmin, #0d161a 100vmin),
+    radial-gradient(circle at center, #506880 0, #1c5b62 20vmin, #05203b 40vmin, #020814 80vmin);
+  background-color: #020814;
+  background-attachment: fixed;
+  color: aliceblue;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.keyboard {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard > * {
+  min-height: auto;
+  max-height: calc(100% - 4em);
+  max-width: 960px;
+  padding: 0 1em;
+  flex: 1 1 auto;
+}
+
+.keyboard_left {
+  transform: translateX(-50%) scale(0.75);
+}
+
+.keyboard_right {
+  transform: translateX(50%) scale(0.75);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+</style>
+
+<body>
+  <div class="keyboard keyboard_left">
+    <img src="pc.png">
+  </div>
+
+  <div class="keyboard keyboard_right">
+    <img src="pc.png">
+  </div>
+
+  <div class="keyboard">
+    <img src="pc.png">
+  </div>
+</body>

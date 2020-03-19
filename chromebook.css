@@ -1,0 +1,126 @@
+.keyboard {
+  width: 791px;
+}
+
+.keyboard_chromebook {
+  position: relative;
+  background: black;
+  color: white;
+  box-sizing: border-box;
+  padding: 0.6%;
+}
+
+.keyboard_chromebook::before {
+  content: '';
+  display: block;
+  padding-top: 40%;
+  background: #2f3135;
+}
+
+.keyboard_chromebook > .keyboard__row {
+  display: flex;
+  position: absolute;
+  left: 1.8%;
+  right: 1.8%;
+  height: 16%;
+  justify-content: space-between;
+}
+
+.keyboard_chromebook > .keyboard__row_a {
+  bottom: 4%;
+}
+
+.keyboard_chromebook > .keyboard__row_b {
+  bottom: 21%;
+}
+
+.keyboard_chromebook > .keyboard__row_c {
+  bottom: 38%;
+}
+
+.keyboard_chromebook > .keyboard__row_d {
+  bottom: 55%;
+}
+
+.keyboard_chromebook > .keyboard__row_e {
+  bottom: 72%;
+}
+
+.keyboard_chromebook .keyboard__btn {
+  background: rgba(0, 0, 0, 0.8);
+  color: inherit;
+  border: 0;
+  width: 6.2%;
+  border-radius: 5%;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+}
+
+.keyboard_chromebook .keyboard__btn_backspace {
+  width: 9.5%;
+}
+
+.keyboard_chromebook .keyboard__btn_tab {
+  width: 9.5%;
+  text-align: left;
+  padding-left: 2ch;
+}
+
+.keyboard_chromebook .keyboard__btn_search {
+  width: 11.5%;
+  text-align: left;
+  padding-left: 2ch;
+}
+
+.keyboard_chromebook .keyboard__btn_shift {
+  width: 15%;
+  text-align: left;
+  padding-left: 2ch;
+}
+
+.keyboard_chromebook .keyboard__btn_shift-right {
+  width: 14.5%;
+  text-align: right;
+  padding-right: 2ch;
+}
+
+.keyboard_chromebook .keyboard__btn_enter {
+  width: 11.5%;
+  text-align: right;
+  padding-right: 2ch;
+}
+
+.keyboard_chromebook .keyboard__btn_ctrl {
+  width: 14.5%;
+  text-align: left;
+  padding-left: 2ch;  
+}
+
+.keyboard_chromebook .keyboard__btn_alt {
+  width: 13.5%;
+  text-align: left;
+  padding-left: 2ch;  
+}
+
+.keyboard_chromebook .keyboard__btn_space {
+  width: 34%;
+  border-radius: 1%/5%;
+}
+
+.keyboard_chromebook .keyboard__btn_alt-gr {
+  width: 7%;
+}
+
+.keyboard_chromebook .keyboard__btn_ctrl-right {
+  width: 6.7%;
+}
+
+.keyboard_chromebook .keyboard__arrows {
+  outline: 1px solid black;
+  width: 20%;
+}
+
+img {
+  opacity: 0 !important;
+  z-index: 1;
+}
